@@ -24,7 +24,7 @@ namespace EvilSideItems
                 );
 
             CraftHammerApi.AddRecipe(
-                BAGet("Esoda"),
+                BAGet("EvilSoda"),
                 new ItemObject[2] { MRIIFBE(Items.DietBsoda), MRIIFBE(Items.PrincipalWhistle) }
                 );
 

@@ -15,7 +15,7 @@ using static BepInEx.BepInDependency;
 
 namespace EvilSideItems
 {
-    [BepInPlugin("ganaisthere.plus.evilsideitems", "Evil Side Items", "0.1.0.0")]
+    [BepInPlugin("ganaisthere.plus.evilsideitems", "Evil Side Items", "0.1.0.2")]
     [BepInDependency("mtm101.rulerp.bbplus.baldidevapi")]
 
     [BepInDependency("mtm101.rulerp.baldiplus.levelstudioloader", DependencyFlags.SoftDependency)]
