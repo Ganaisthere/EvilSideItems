@@ -9,7 +9,7 @@ namespace EvilSideItems.CustomItems
 
         public override bool Use(PlayerManager pm)
         {
-            value = (int)(pm.plm.stamina / pm.plm.StaminaMax * 100f);
+            value = (int)(pm.plm.stamina / pm.plm.StaminaMax * 200f);
             pm.plm.stamina = 0f;
             Singleton<CoreGameManager>.Instance.AddPoints(value, pm.playerNumber, true, true, true);
             return true;

@@ -110,27 +110,27 @@ namespace EvilSideItems
             AssetMan.Add("EvilQuarter", evilQuarter);
             AddedItemKey.Add("EvilQuarter");
 
-            yield return "Building Item - Esoda";
-            OneStepToAddIcon("Esoda");
-            AddTexture2DAndToSprite("EsodaSpray_Sprite_Transparent.png", "Textures/Entity", 20f);
-            ItemObject eSODA = new ItemBuilder(Info)
-                .SetNameAndDescription("Itm_Esoda", "Desc_Esoda")
+            yield return "Building Item - EvilSoda";
+            OneStepToAddIcon("EvilSoda");
+            AddTexture2DAndToSprite("EvilSodaSpray_Sprite_Transparent.png", "Textures/Entity", 20f);
+            ItemObject evilSoda = new ItemBuilder(Info)
+                .SetNameAndDescription("Itm_EvilSoda", "Desc_EvilSoda")
                 .SetSprites(AssetMan.Get<Sprite>(small), AssetMan.Get<Sprite>(large))
-                .SetEnum("Esoda")
+                .SetEnum("EvilSoda")
                 .SetShopPrice(325)
                 .SetGeneratorCost(60)
-                .SetItemComponent<ITM_Esoda>()
+                .SetItemComponent<ITM_EvilSoda>()
                 .SetMeta(
                     ItemFlags.CreatesEntity,
                     new string[]
                     {
-                        "ESODA",
+                        "EvilSoda",
                         "RMS_Trading_Common",
                         "food"
                     })
                 .Build();
-            AssetMan.Add("Esoda", eSODA);
-            AddedItemKey.Add("Esoda");
+            AssetMan.Add("EvilSoda", evilSoda);
+            AddedItemKey.Add("EvilSoda");
 
             yield return "Building Item - EvilZestyBar";
             OneStepToAddIcon("EvilZestyBar");
@@ -462,7 +462,7 @@ namespace EvilSideItems
                     foreach (CustomLevelObject customLevelObject in customLevelObjects)
                     {
                         AddItem(customLevelObject, "EvilQuarter", 90);
-                        AddItem(customLevelObject, "Esoda", 85);
+                        AddItem(customLevelObject, "EvilSoda", 85);
                         AddItem(customLevelObject, "EvilZestyBar", 80);
                         AddItem(customLevelObject, "EvilKey", 75);
                         AddItem(customLevelObject, "SuperDirtyChalkEraser", 65, 70);

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace EvilSideItems.CustomItems
 {
-    public class ITM_Esoda : Item
+    public class ITM_EvilSoda : Item
     {
         [SerializeField]
         private PlayerManager player;
@@ -36,7 +36,7 @@ namespace EvilSideItems.CustomItems
             spriteRenderer_Obj.transform.position = transform.position;
             spriteRenderer_Obj.layer = LayerMask.NameToLayer("Billboard");
             SpriteRenderer spriteRenderer = spriteRenderer_Obj.AddComponent<SpriteRenderer>();
-            spriteRenderer.sprite = BasePlugin.AssetMan.Get<Sprite>("EsodaSpray_Sprite_Transparent");
+            spriteRenderer.sprite = BasePlugin.AssetMan.Get<Sprite>("EvilSodaSpray_Sprite_Transparent");
             spriteRenderer.SetSpriteRotation(Random.Range(0f, 360f));
             spriteRenderer.material = AssetFinder.FindOfTypeWithName<Material>("SpriteStandard_Billboard", true);
 
